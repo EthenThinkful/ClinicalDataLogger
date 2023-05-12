@@ -3,7 +3,7 @@ import axios from 'axios';
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react';
-import { useParams} from 'react-router-dom'
+import { useParams, Link} from 'react-router-dom'
 
 function CollectClinicals(){
     const [patientData,setPatientData] = useState()
@@ -36,7 +36,7 @@ function CollectClinicals(){
     }
 
   
-        return (<div>
+        return (<div className='container addPatientContainer'>
                 <h2>Patient Details:</h2>
                 First Name: {!isLoading?patientData.firstName:""}<br/>
                 Last Name: {!isLoading?patientData.lastName:""}<br/>
@@ -50,8 +50,9 @@ function CollectClinicals(){
                         <option value="heartrate">Heart Rate</option>
                         </select><br/>
                     Value:<input type="text" name="componentValue" onChange={e=>setComponentValue(e.target.value)}/><br/>
-                    <button onClick={handleSubmit.bind(this)}>Confirm</button>
+                    <button className='buttonBackground addPatientButton' onClick={handleSubmit.bind(this)}>Confirm</button>
                 </form>
+                <Link to={'/'}>Go Back</Link>
         </div>)
     }
 

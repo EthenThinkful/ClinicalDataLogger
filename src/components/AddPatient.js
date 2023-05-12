@@ -23,15 +23,16 @@ function AddPatient(){
     }
 
 
-        return (<div className="container addPatientContainer">
+        return (
+        <div className="container addPatientContainer">
                 <h2>Create Patient:</h2>
-                <form onSubmit={e => { e.preventDefault(); }}>
+                <form  onSubmit={e => { e.preventDefault(); }}>
                 First Name:<input type="text" name="firstName" onChange={e=>setFirstName(e.target.value)} align="left"/>
                 Last Name:<input type="text" name="lastName" onChange={e=>setLastName(e.target.value)} align="left"/>
                 Age:<input type="text" name="age" onChange={e=>setAge(e.target.value)} align="left"/>
                 <button className="buttonBackground addPatientButton" onClick={handleSubmit.bind(this)}>Confirm</button>
                 </form>
-                <Link  to={'/'}>Go Back</Link>
+                <Link to={'/'}>Go Back</Link>
         </div>)
     
 }

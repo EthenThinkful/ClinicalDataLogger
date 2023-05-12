@@ -43,9 +43,9 @@ function RowCreator(props){
        
         return<div>
             <tr>
-            <td>{eachEntry.componentName}</td>
-            <td>{eachEntry.componentValue}</td>
-            <td>{eachEntry.measuredDateTime}</td>
+            <td className='analyzeTd'>{eachEntry.componentName}</td>
+            <td className='analyzeTd'>{eachEntry.componentValue}</td>
+            <td className='analyzeTd'>{eachEntry.measuredDateTime}</td>
 
         </tr>
         </div>

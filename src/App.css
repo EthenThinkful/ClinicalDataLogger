@@ -40,6 +40,8 @@
 
 .addPatientContainer {
   margin-top: 2rem;
+  align-items: center;
+  margin-top: 2rem;
 }
 
 header {
@@ -117,6 +119,9 @@ table {
 th, td {
   /* border-bottom: 1px solid black; */
   padding: 10px;
+}
+
+.analyzeTd {
   width: 100%;
 }
 

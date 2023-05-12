@@ -5,8 +5,8 @@ const Footer = () => {
     return (
         <footer>
             <div className="footerContainer">
-            <Link  to={'/addPatient'}>Portfolio</Link>
             <nav>Ethen.dev</nav>
+            <Link  to={'https://ethenportfolio.vercel.app/'}>Back To Portfolio</Link>
             </div>
         </footer>
     )
