@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.App {
+  text-align: center;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.headerContainer {
+  background-color: #61dafb;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headingContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.analyzeDataContainer {
+  margin-top: 2rem;
+}
+
+.addPatientContainer {
+  margin-top: 2rem;
+}
+
+header {
+  background-color: #61dafb;
+  padding: 1.5rem;
+}
+
+nav {
+  font-size: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.logo {
+  font-size: 2rem;
+}
+
+.logoAddPatient {
+  font-size: 1.7rem;
+  margin-left: .5rem;
+  padding-left: .3rem;
+}
+
+.tableLogos {
+  font-size: 1.5rem;
+}
+
+.buttonBackground {
+  background-color: #4CAF50;
+  padding: .7rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+.goToAddPatientButton {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+}
+
+.addPatientButton {
+  margin: 1rem;
+  cursor: pointer;
+}
+
+:root {
+  background-color: white;
+  min-height: 100%;
+  position: relative;
+}
+
+h2 {
+  color: black;
+  font-weight: 400;
+  font-size: 2rem;
+  display: flex;
+  margin-top: 0;
+  justify-content: flex-start;
+}
+
+table {
+  border: 1px solid lightslategray;
+  border-radius: 1em;
+  border-spacing: 0;
+  overflow: hidden;
+  margin: 2rem;
+}
+
+th, td {
+  /* border-bottom: 1px solid black; */
+  padding: 10px;
+  width: 100%;
+}
+
+thead th {
+  width: 25%;
+  background-color: lightslategray;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #eee;
+}
+
+tr:last-child > td {
+  border-bottom: none;
+}
+
+tr:hover {background-color: #8e9baa;}
+
+tr {
+  width: 100%;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+div.ex1 {
+  width:850px;
+  height:450px;
+  margin: auto;
+  border: 3px solid #73AD21;
+}
+
+.footerContainer {
+  background-color: #61dafb;
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  background-color: #61dafb;
+  padding: 2rem;
+  position:absolute;
+  left:0;
+  bottom:0;
+  right:0;
+  width: 100%;
+}
+
+.footerStayBottom {
+  padding-top: 2rem;
+  margin: 2rem;
+}
