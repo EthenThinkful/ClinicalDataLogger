@@ -3,8 +3,6 @@ import axios from 'axios';
 import {Link, useParams} from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
-
-
 function AnalyzeData(){
     const [data,setData] = useState([])
     const {patientId} = useParams()
@@ -20,20 +18,27 @@ function AnalyzeData(){
     },[]);
 
   
-        return (<div className='container analyzeDataContainer'>
-              <h3>Patient Details:</h3>
+        return (<div className='container addPatientContainer'>
+            <i class="uil uil-eye tableLogos"></i>
+            <div className='patientData'>
+              <h2>Patient Details:</h2>
+              <div className='alignContent'>
                 First Name: {data.firstName}<br/>
                 Last Name: {data.lastName}<br/>
                 Age: {data.age}
-              
-            <h3>Clinical Report:</h3>
-            <table className='container'>
+              </div>
+            </div>
+            <h2>Clinical Report:</h2>
+            <div className="analyzeTable">
+            <table className="analyzeTable">
+                <tbody>
                     {!isLoading?data.clinicalData.map(eachEntry=><RowCreator item={eachEntry} 
                     />):""}
+                    </tbody>
                     </table>
-            
+                    </div>            
             <Link to={'/'}>Go Back</Link>
-
+            
         </div>)
     
 }
@@ -41,14 +46,11 @@ function AnalyzeData(){
 function RowCreator(props){
         var eachEntry = props.item;
        
-        return<div>
-            <tr>
-            <td className='analyzeTd'>{eachEntry.componentName}</td>
-            <td className='analyzeTd'>{eachEntry.componentValue}</td>
-            <td className='analyzeTd'>{eachEntry.measuredDateTime}</td>
-
-        </tr>
-        </div>
+        return<tr>
+            <td>{eachEntry.componentName}</td>
+            <td>{eachEntry.componentValue}</td>
+            <td>{eachEntry.measuredDateTime}</td>
+        </tr>   
     }
 
 

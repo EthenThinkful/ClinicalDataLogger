@@ -37,11 +37,14 @@ function CollectClinicals(){
 
   
         return (<div className='container addPatientContainer'>
+            <i class="uil uil-cloud-computing tableLogos"></i>
                 <h2>Patient Details:</h2>
+                <div className='alignContent'>
                 First Name: {!isLoading?patientData.firstName:""}<br/>
                 Last Name: {!isLoading?patientData.lastName:""}<br/>
                 Age: {!isLoading?patientData.age:""}
-                <h2>Patient Clinical Data:</h2>
+                </div>
+                <h2 className='analyzeDataContainer'>Add Clinical Data:</h2>
                 <form>
                     Clinical Entry Type:<select onChange={e=>setComponentName(e.target.value)}>
                         <option>Select One</option>

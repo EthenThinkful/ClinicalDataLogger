@@ -38,10 +38,17 @@
   margin-top: 2rem;
 }
 
+.cloudLogo {
+  font-size: 3rem;
+}
+
 .addPatientContainer {
   margin-top: 2rem;
   align-items: center;
   margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 6rem;
 }
 
 header {
@@ -65,7 +72,7 @@ h2 {
 }
 
 .logoAddPatient {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
   margin-left: .5rem;
   padding-left: .3rem;
 }
@@ -121,8 +128,21 @@ th, td {
   padding: 10px;
 }
 
-.analyzeTd {
-  width: 100%;
+.analyzeTable {
+  margin-top: .5rem;
+  display: flex;
+  justify-content: flex-start;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.patientData {
+  margin-bottom: 2rem;
+}
+
+.alignContent {
+  text-align: left;
+  justify-content: center;
 }
 
 thead th {
