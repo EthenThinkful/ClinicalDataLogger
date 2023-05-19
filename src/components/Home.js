@@ -3,6 +3,8 @@ import {Link} from 'react-router-dom';
 import axios from 'axios';
 import { useEffect, useState } from 'react';
 
+const BASE_URL = "http://18.117.236.81:8080/api";
+
 function Home(){
  
     const [patientData,setPatientData] = useState([])
@@ -10,7 +12,7 @@ function Home(){
 
 
     useEffect(()=>{
-      axios.get('http://localhost:8080/clinicalservices/api/patients').then(res=> {
+      axios.get(`${BASE_URL}/patients`).then(res=> {
         setPatientData(res.data);
         setLoading(false);
       })
