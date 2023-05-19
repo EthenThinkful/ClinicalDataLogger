@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 
-const BASE_URL = "http://18.117.236.81:8080/api";
+const BASE_URL = "http://18.204.203.3:8080/api";
 
 function AddPatient(){
 

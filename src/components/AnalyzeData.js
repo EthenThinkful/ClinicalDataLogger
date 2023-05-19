@@ -3,7 +3,7 @@ import axios from 'axios';
 import {Link, useParams} from 'react-router-dom'
 import { useEffect, useState } from 'react';
 
-const BASE_URL = "http://18.117.236.81:8080/api";
+const BASE_URL = "http://18.204.203.3:8080/api";
 
 function AnalyzeData(){
     const [data,setData] = useState([])

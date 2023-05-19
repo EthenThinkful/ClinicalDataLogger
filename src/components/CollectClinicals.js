@@ -5,7 +5,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import { useEffect, useState } from 'react';
 import { useParams, Link} from 'react-router-dom'
 
-const BASE_URL = "http://18.117.236.81:8080/api";
+const BASE_URL = "http://18.204.203.3:8080/api";
 
 function CollectClinicals(){
     const [patientData,setPatientData] = useState()
@@ -32,7 +32,7 @@ function CollectClinicals(){
         componentName: componentName,
         componentValue: componentValue
      }
-     axios.post('http://localhost:8080/clinicalservices/api/clinicals',data).then(res=> {
+     axios.post(`${BASE_URL}/clinicals`,data).then(res=> {
         toast("Patient data added successfully")
      })
     }
