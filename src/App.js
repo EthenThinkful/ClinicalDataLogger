@@ -12,7 +12,7 @@ import Footer from './components/Footer';
 function App()  {
 
     return (
-      <div className="App">
+      <div className="App ">
         <Header />
         <ToastContainer autoClose={2000} 
         position = {toast.POSITION.BOTTOM_CENTER}/>

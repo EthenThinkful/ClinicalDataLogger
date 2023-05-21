@@ -9,6 +9,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* css trick below to spot borders and easily see mistakes */
+  /* border:1px solid orange; */
+}
+
+.section {
+  padding: 6rem 0 2rem;
 }
 
 .container {
@@ -58,13 +64,6 @@ header {
 
 nav {
   font-size: 1rem;
-}
-
-h2 {
-  font-size: 2rem;
-  margin-top: 2rem;
-  display: flex;
-  justify-content: flex-start;
 }
 
 .logo {
@@ -235,4 +234,122 @@ footer {
 .footerStayBottom {
   padding-top: 2rem;
   margin: 2rem;
+}
+
+.bodyContainer {
+  padding: 0rem;
+}
+
+@media screen and (max-width: 992px) {
+  /* .container {
+    margin: 1.5rem;
+  } */
+
+  h2 {
+    color: black;
+    font-weight: 400;
+    font-size: 1.5rem;
+    display: flex;
+    margin-top: 0;
+    justify-content: flex-start;
+  }
+
+  .bodyContainer {
+    padding: 1.5rem;
+  }
+
+  th, td {
+    /* border-bottom: 1px solid black; */
+    padding: 5px;
+  }
+
+  .headingContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+
+  .tableLogos {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  .container {
+    margin: 1.5rem;
+  }
+
+  table {
+    font-size: .8rem;
+  }
+
+  .tableLogos {
+    font-size: 1rem;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav {
+    font-size: .8rem;
+  }
+
+  .goToAddPatientButton {
+    padding-left: .5rem;
+    padding-right: .5rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .8rem;
+  }
+
+  .footerContainer {
+    background-color: #61dafb;
+    max-width: 968px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8rem;
+  }
+
+  th, td {
+    /* border-bottom: 1px solid black; */
+    padding: 5px;
+  }
+
+  .bodyContainer {
+    padding: 0rem;
+  }
+
+}
+
+@media screen and (max-width: 365px) {
+  h2 {
+    font-size: .8rem;
+  }
+
+  table {
+    font-size: .5rem;
+  }
+
+  .tableLogos {
+    font-size: .8rem;
+  }
+
+  .goToAddPatientButton {
+    padding-left: .3rem;
+    padding-right: .3rem;
+    padding-top: .3rem;
+    padding-bottom: .3rem;
+    font-size: .5rem;
+  }
+
 }

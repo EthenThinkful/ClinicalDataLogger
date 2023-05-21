@@ -21,8 +21,9 @@ function Home(){
         return (<div>
             <div className='headingContainer container'>
             <h2>Patients:</h2>
-            <div className='buttonBackground goToAddPatientButton'>Register Patient<Link  to={'/addPatient'}><i class="uil uil-user-plus logoAddPatient"></i></Link></div>
+            <div className='buttonBackground goToAddPatientButton'><Link  to={'/addPatient'}>Register Patient</Link></div>
             </div>
+            <div className='bodyContainer'>
             <table className='container'>
                 <thead>
                     <tr>
@@ -39,6 +40,7 @@ function Home(){
 
                 </tbody>
             </table>
+            </div>
             <br/>
         </div>)
 }
