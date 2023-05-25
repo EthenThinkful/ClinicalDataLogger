@@ -1,5 +1,5 @@
 ### Clinical Data Logger
-Frontend of my Clinical Data Logger application built with React. Uses axios to communicate with and process data on the backend.
+Frontend of my Clinical Data Logger application built with React and deployed with AWS S3 instance. Uses axios to communicate with and process data on the backend.
 
 #### See backend repo here: [https://github.com/EthenThinkful/ClinicalDataLogger](https://github.com/EthenThinkful/ClinicalDataLoggerBackend)
 
