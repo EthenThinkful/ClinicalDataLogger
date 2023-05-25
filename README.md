@@ -5,4 +5,4 @@ Frontend of my Clinical Data Logger application built with React. Uses axios to 
 
 #### Demo: http://clinicaldataloggerfe.s3-website-us-east-1.amazonaws.com/
 
-![previewClinicals](https://github.com/EthenThinkful/ClinicalDataLogger/assets/104235709/1bb9a610-19da-45fd-9d63-986ccc9dbae1)
+![clinicals](https://github.com/EthenThinkful/ClinicalDataLogger/assets/104235709/66a5317a-d2be-4e47-9f23-85746f30724f)
