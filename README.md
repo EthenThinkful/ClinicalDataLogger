@@ -1,5 +1,5 @@
 ### Clinical Data Logger
-React frontend built with React, uses axios to communicate with and process data on the backend (see pinned repos for backend repo).
+Frontend built with React, uses axios to communicate with and process data on the backend (see pinned repos for backend repo).
 
 Demo: http://clinicaldataloggerfe.s3-website-us-east-1.amazonaws.com/
 
